@@ -1,11 +1,13 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter } from 'react-router';
 
+
+// API User ID and Key for access
 const clientID = import.meta.env.VITE_CLIENT_ID;
 const clientSecret = import.meta.env.VITE_CLIENT_SECRET;
 
 function App() {
+  console.log("Testing")
 
   return (
     <div>
