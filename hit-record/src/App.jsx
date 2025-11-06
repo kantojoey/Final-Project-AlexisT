@@ -8,6 +8,7 @@ import ListeningLogPage from './components/pages/ListeningLogPage';
 import AboutPage from './components/pages/AboutPage';
 import SearchPage from './components/pages/SearchPage';
 import ProfilePage from './components/pages/ProfilePage';
+import Footer from './components/common/Footer';
 
 
 // API User ID and Key for access
@@ -17,8 +18,8 @@ const clientSecret = import.meta.env.VITE_CLIENT_SECRET;
 function App() {
 
   const [accessToken, setAccessToken] = useState();
-  
-  useEffect(()=> {
+
+  useEffect(() => {
     // Storing the fetch parameters for readability
     let authCredentials = {
       method: "POST",
@@ -26,7 +27,7 @@ function App() {
         "Content-Type": "application/x-www-form-urlencoded"
       },
       body:
-        "grant_type=client_credentials&client_id="+clientID+"&client_secret="+clientSecret,
+        "grant_type=client_credentials&client_id=" + clientID + "&client_secret=" + clientSecret,
     };
 
     // Fetch returns access token object with 3 key-values: access_token, token_type, and expires_in
@@ -35,22 +36,24 @@ function App() {
       .then((data) => {
         setAccessToken(data.access_token);
       }
-    );
+      );
   }, []);
 
-console.log(accessToken);
+  console.log(accessToken);
 
   return (
-    <div>
+    <div id="body-container">
       <Header />
-      <Routes>
-        <Route path="/" element={<LoadingPage />}/>
-        <Route path="/home" element={<HomePage />}/>
-        <Route path="/listening-log" element={<ListeningLogPage />}/>
-        <Route path="/about" element={<AboutPage />}/>
-        <Route path="/search" element={<SearchPage />}/>
-        <Route path="/profile" element={<ProfilePage />}/>
-      </Routes>
+      <main>placeholder</main>
+      {/* <Routes>
+        <Route path="/" element={<LoadingPage />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/listening-log" element={<ListeningLogPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/search" element={<SearchPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+      </Routes> */}
+      <Footer />
 
     </div>
   )
