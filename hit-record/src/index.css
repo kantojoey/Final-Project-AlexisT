@@ -1,0 +1,18 @@
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.header-text{
+    padding-top: 5px;
+    font-size: 50px;
+}
+.header-image{
+    width: 8vw;
+    height: 12vh;
+}
