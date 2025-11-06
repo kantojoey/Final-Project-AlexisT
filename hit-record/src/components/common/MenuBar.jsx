@@ -1,4 +1,4 @@
-const PageBar = () => {
+const MenuBar = () => {
     return (
         <>
             
@@ -6,4 +6,4 @@ const PageBar = () => {
     );
 };
 
-export default PageBar;
+export default MenuBar;
