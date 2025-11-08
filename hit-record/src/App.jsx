@@ -1,14 +1,14 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import Header from './components/common/Header';
-import { Route, Routes } from 'react-router';
+import Footer from './components/common/Footer';
 import LoadingPage from './components/pages/LoadingPage';
 import HomePage from './components/pages/HomePage';
 import ListeningLogPage from './components/pages/ListeningLogPage';
 import AboutPage from './components/pages/AboutPage';
 import SearchPage from './components/pages/SearchPage';
 import ProfilePage from './components/pages/ProfilePage';
-import Footer from './components/common/Footer';
+import { Routes, Route } from 'react-router';
 
 
 // API User ID and Key for access
@@ -44,15 +44,7 @@ function App() {
   return (
     <div id="body-container">
       <Header />
-      <main>placeholder</main>
-      {/* <Routes>
-        <Route path="/" element={<LoadingPage />} />
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/listening-log" element={<ListeningLogPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/search" element={<SearchPage />} />
-        <Route path="/profile" element={<ProfilePage />} />
-      </Routes> */}
+      <HomePage />
       <Footer />
 
     </div>
@@ -60,3 +52,13 @@ function App() {
 }
 
 export default App
+
+//  <Routes>
+//     <Route path="/" element={<LoadingPage />} />
+//     <Route path="/home" element={<HomePage />} />
+//     <Route path="/listening-log" element={<ListeningLogPage />} />
+//     <Route path="/about" element={<AboutPage />} />
+//     <Route path="/search" element={<SearchPage />} />
+//     <Route path="/profile" element={<ProfilePage />} />
+//   </Routes>
+//   <BottomNavBar />
