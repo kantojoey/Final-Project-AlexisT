@@ -88,3 +88,29 @@ main {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+#user-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    place-items: center;
+}
+
+.stat {
+    border: 2px solid brown;
+    padding: 10px 10px;
+    width: 20rem;
+    text-align: center;
+}
+
+/* Fix this so it shows 5 per row on desktop and switches at breakpoints */
+.recently-listened {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    border: 2px solid brown;
+    margin: 50px 50px;
+    padding-left: 15px;
+    place-items: center;
+    width: 100%;
+}

@@ -1,13 +1,13 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import Header from './components/common/Header';
-import Footer from './components/common/Footer';
 import LoadingPage from './components/pages/LoadingPage';
 import HomePage from './components/pages/HomePage';
 import ListeningLogPage from './components/pages/ListeningLogPage';
 import AboutPage from './components/pages/AboutPage';
 import SearchPage from './components/pages/SearchPage';
 import ProfilePage from './components/pages/ProfilePage';
+import Footer from './components/common/Footer';
 import { Routes, Route } from 'react-router';
 
 
@@ -44,7 +44,7 @@ function App() {
   return (
     <div id="body-container">
       <Header />
-      <HomePage />
+      <ListeningLogPage />
       <Footer />
 
     </div>
