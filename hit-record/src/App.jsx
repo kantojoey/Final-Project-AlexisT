@@ -44,7 +44,7 @@ function App() {
   return (
     <div id="body-container">
       <Header />
-      <ListeningLogPage />
+      <SearchPage />
       <Footer />
 
     </div>

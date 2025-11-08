@@ -114,3 +114,39 @@ main {
     place-items: center;
     width: 100%;
 }
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20vw;
+}
+
+.album-search {
+    width: 50vw;
+}
+
+.search-button {
+    width: 10vw;
+    background-color: rgb(253, 101, 0);
+    border: 2px solid black;
+    border-radius: 3px;
+    height: 50px;
+}
+
+.search-results {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20vw;
+}
+
+.add-album-button {
+    width: 10vw;
+    background-color: rgb(253, 101, 0);
+    border: 2px solid black;
+    border-radius: 3px;
+    height: 50px;
+    margin-right: 222px;
+}

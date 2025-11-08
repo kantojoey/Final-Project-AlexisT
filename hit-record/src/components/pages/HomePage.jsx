@@ -21,7 +21,7 @@ const HomePage = () => {
                 </AlbumCard>
             </AlbumShelf>
             <h2 style={{textDecoration:"underline"}}>Recently Listened →</h2>
-            <AlbumShelf className="recently-listened">
+            <AlbumShelf>
                 <AlbumCard>
                     <img src = {VinylRecord} className="placeholder"></img>
                 </AlbumCard>
